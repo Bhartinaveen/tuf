@@ -86,7 +86,7 @@ const CalendarGrid: React.FC<CalendarGridProps> = ({
           if (activeDateNode === dateKey) classes += ' active-note-node';
           if (isSearchMatch) classes += ' search-match';
 
-          const dynamicTitle = []
+          const dynamicTitle: string[] = []
           if (holidayName) dynamicTitle.push(`🎉 ${holidayName}`);
           if (hasNote) dynamicTitle.push(`📝 ${notesObj[dateKey]}`);
 
